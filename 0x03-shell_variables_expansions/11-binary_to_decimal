@@ -1,3 +1,2 @@
-#!/bin/bash
+#!/b\in/bash
 printf "%d\n" $((2#$BINARY))
-
