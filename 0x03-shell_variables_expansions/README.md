@@ -1,0 +1,1 @@
+This project work on shell ,init files, variables and expansions
