@@ -2,19 +2,24 @@
 #print diffrent 
 
 count=0
-while [ $count -lt 20 ]
+while [ $count -le 20 ]
 do
-    if [ $count -eq 4 ]
-    then
-        echo "bad luck from china"
-    elif [ $count -eq 9 ]
-    then
-        echo "bad luck from japan"
-    elif [ $count -eq 17 ]
-    then
-        echo "bad luck from Italy"
-    else
-        echo "$count"
-    fi
-    ((count++))
+	case $count in
+		4)
+			echo $count
+			echo "bad luck from china"
+			;;
+		9)
+			echo $count
+			echo "bad luck form Japan"
+			;;
+		17)
+			echo $count
+			echo "bad luck form Italy"
+			;;
+		*)
+			echo $count
+			;;
+		esac
+	((count++))
 done
